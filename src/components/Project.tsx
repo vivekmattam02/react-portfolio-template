@@ -4,7 +4,6 @@ import "../assets/styles/Project.scss";
 // Use existing mock images to avoid file-not-found errors
 import datacenter from '../assets/images/datacenter.jpg';
 import esvc from '../assets/images/esvc.jpg';
-import portfolio from '../assets/images/portfolio.jpg';
 import vip from '../assets/images/vip.jpg';
 
 
