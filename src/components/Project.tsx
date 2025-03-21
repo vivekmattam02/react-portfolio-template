@@ -1,74 +1,129 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
-import '../assets/styles/Project.scss';
+import "../assets/styles/Project.scss";
+
+// Use existing mock images to avoid file-not-found errors
+import datacenter from '../assets/images/datacenter.jpg';
+import esvc from '../assets/images/esvc.jpg';
+import portfolio from '../assets/images/portfolio.jpg';
+import vip from '../assets/images/vip.jpg';
+
 
 function Project() {
-    return(
+  return (
     <div className="projects-container" id="projects">
-        <h1>Personal Projects</h1>
-        <div className="projects-grid">
-            <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
-            </div>
-            <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
-            </div>
-            <div className="project">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
-                <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
-                <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
-            </div>
-            <div className="project">
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><h2>WeManage: Real Estate Asset Management</h2></a>
-                <p>This mobile application allows realtors in Japan to securely manage their property information and view future income predictions. This app is built with Ruby on Rails and JavaScript.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><img src={mock05} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><h2>COVID-19 Case Management</h2></a>
-                <p>Built official charts for COVID/vaccination tracking for an educational institution using JavaScript and the Google Sheets API v4. The dashboard served the university's leadership in their decision-making processes.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><img src={mock04} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><h2>Multiple Regression Property Analysis</h2></a>
-                <p>Analyzed the real estate market in Japan and predicted property prices by implementing statistical methods such as OLS and multi-regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
-            </div>
-            <div className="project">
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><h2>Programs of Study</h2></a>
-                <p>Designed and developed a custom component for a CMS-based platform (e.g., 'Brightspot') using Java, Handlebars, and LESS. University students can find their majors of interest through this module.</p>
-            </div>
-            <div className="project">
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
-                <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
-            </div>
+      <h1>Projects</h1>
+      <div className="projects-grid">
+
+        {/* 1) HSRN Robot – Data Center Robot */}
+        <div className="project">
+          <img src={datacenter} className="zoom" alt="HSRN Robot" width="100%" />
+          <h2>HSRN Robot – Data Center Robot</h2>
+          <p>
+            The HSRN Robot Project at NYU focuses on developing a joystick-driven robotic system 
+            for data center automation, enabling precise navigation and real-time task execution. 
+            My role as a Developer involves designing robotic perception models and multi-agent 
+            coordination strategies to improve efficiency and reliability in structured environments.
+          </p>
+          <p>
+            Currently, I am working on sensor fusion techniques to enhance robotic perception, 
+            allowing the system to process and interpret data more accurately in real time. 
+            Additionally, I am developing multi-agent control algorithms, ensuring multiple robots 
+            can coordinate tasks effectively without conflicts or inefficiencies.
+          </p>
+          <p>
+            To achieve seamless integration, I am implementing Corelink C++ client with ROS, 
+            allowing for efficient communication between the robotic system and the central 
+            control network. The joystick-based interface ensures precise manual control while 
+            maintaining the flexibility for future autonomous operations.
+          </p>
+          <p><strong>Technologies:</strong> ROS, C++, Python, Corelink, Sensor Fusion</p>
         </div>
+
+        {/* 2) NYU VIP Self-Drive – Autonomous Navigation & Visual SLAM */}
+        <div className="project">
+          <img src={vip} className="zoom" alt="NYU Self-Drive" width="100%" />
+          <h2>NYU VIP Self-Drive – Autonomous Navigation & Visual SLAM</h2>
+          <p>
+            The NYU VIP Self-Drive project is a research initiative focused on developing 
+            autonomous navigation and mapping capabilities for small-scale indoor robotic vehicles. 
+            Our goal is to achieve efficient self-driving behavior in unknown environments 
+            using Visual SLAM, feature-based navigation, and real-time motion planning.
+          </p>
+          <p>
+            I’m currently working on path planning, SLAM integration, and robot localization, 
+            using A* search for optimal pathfinding and ORB feature matching for vision-based 
+            landmark recognition. The system operates on ROS 2 Humble, utilizing a monocular camera 
+            for mapping and a TurtleBot3 platform for real-time testing.
+          </p>
+          <p>
+            A key challenge is ensuring accurate navigation with minimal sensor data, requiring 
+            advanced graph-based planning and efficient exploration strategies. The final stage 
+            of development will focus on competing in the Self-Drive Exploration & Navigation Challenge.
+          </p>
+          <p><strong>Technologies:</strong> ROS 2 Humble, A*, ORB SLAM, TurtleBot3, OpenCV, C++</p>
+        </div>
+
+        {/* 3) The S.L.A.P. Hand – Evolving My Animatronic Hand Project */}
+        <div className="project">
+          <img src={vip} className="zoom" alt="S.L.A.P. Hand" width="100%" />
+          <h2>The S.L.A.P. Hand – Evolving My Animatronic Hand Project</h2>
+          <p>
+            The S.L.A.P. Hand (Simultaneous Linked Articulation Project) is an advanced version 
+            of my undergraduate Animatronic Hand project, designed for remote operation and 
+            hazardous material handling. I’m currently focused on improving control accuracy, 
+            articulation, and response time by integrating Wi-Fi-based communication, gesture 
+            tracking, and haptic feedback.
+          </p>
+          <p>
+            This project is still in progress, and the next steps involve transitioning from 
+            Bluetooth to a more stable wired communication system, improving motor response times, 
+            and fine-tuning gesture-based articulation. Future plans include integrating cameras on 
+            the fingers for real-time object detection and exploring AI-driven grasp optimization.
+          </p>
+          <p><strong>Technologies:</strong> ESP8266, MPU6050, Haptic Feedback, Wi-Fi Communication</p>
+        </div>
+
+        {/* 4) B.A.R.K. Door – Smart Pet Access System */}
+        <div className="project">
+          <img src={portfolio} className="zoom" alt="B.A.R.K. Door" width="100%" />
+          <h2>B.A.R.K. Door – Smart Pet Access System</h2>
+          <p>
+            B.A.R.K. (Bluetooth Actuated Remote Key) Door is a smart pet-access system I developed to 
+            enable secure, automated pet entry while preventing unauthorized access. The system 
+            uses RFID authentication, Bluetooth connectivity, and IoT-based monitoring.
+          </p>
+          <p>
+            I designed and implemented the system with BS2-controlled servo mechanisms, 
+            an RFID-based locking system, and Bluetooth-based manual override via a mobile app. 
+            Currently, I’m exploring Wi-Fi integration and AI-driven behavioral tracking to enhance 
+            access security and adaptability.
+          </p>
+          <p><strong>Technologies:</strong> BS2, RFID, Bluetooth, IoT, Servo Mechanisms</p>
+        </div>
+
+        {/* 5) E.S.V.C. – Solar-Powered Electric Vehicle for Sustainable Mobility */}
+        <div className="project">
+          <img src={esvc} className="zoom" alt="E.S.V.C. Project" width="100%" />
+          <h2>E.S.V.C. – Solar-Powered Electric Vehicle</h2>
+          <p>
+            The E.S.V.C. (Electric Solar Vehicle Championship) project focused on developing 
+            an electric solar vehicle designed for sustainability and efficient mobility. 
+            As part of Team Solarians 4.0 (ESVC-22-1498), I was responsible for designing 
+            and structurally analyzing a lightweight tubular chassis using CATIA V5 and 
+            ANSYS R16.2 software.
+          </p>
+          <p>
+            The chassis, engineered from AISI 4130 steel, ensured robustness under dynamic 
+            and impact loads. The design adhered to E.S.V.C. rulebook guidelines, emphasizing 
+            safety, vehicle stability, and optimal performance in competition conditions.
+          </p>
+          
+          <p><strong>Technologies:</strong> CATIA V5, ANSYS R16.2.</p>
+        </div>
+
+      </div>
     </div>
-    );
+  );
 }
 
 export default Project;

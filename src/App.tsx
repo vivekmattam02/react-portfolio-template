@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import {
   Main,
-  Timeline,
-  Expertise,
   Project,
+  Internship,  // ✅ Added Internship section
   Contact,
   Navigation,
   Footer,
@@ -23,18 +22,17 @@ function App() {
     }
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-      }, []);
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
 
     return (
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-        <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+        <Navigation parentToChild={{ mode }} modeChange={handleModeChange} />
         <FadeIn transitionDuration={700}>
-            <Main/>
-            <Expertise/>
-            <Timeline/>
-            <Project/>
-            <Contact/>
+            <Main />
+            <Internship />  {/* ✅ Added Internship section here */}
+            <Project />
+            <Contact />
         </FadeIn>
         <Footer />
     </div>
