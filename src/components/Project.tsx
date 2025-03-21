@@ -84,7 +84,7 @@ function Project() {
 
         {/* 4) B.A.R.K. Door – Smart Pet Access System */}
         <div className="project">
-          <img src={portfolio} className="zoom" alt="B.A.R.K. Door" width="100%" />
+          <img src={esvc} className="zoom" alt="B.A.R.K. Door" width="100%" />
           <h2>B.A.R.K. Door – Smart Pet Access System</h2>
           <p>
             B.A.R.K. (Bluetooth Actuated Remote Key) Door is a smart pet-access system I developed to 
