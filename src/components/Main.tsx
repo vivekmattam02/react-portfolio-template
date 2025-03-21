@@ -9,7 +9,7 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-        <img src="/portfolio.jpg" alt="Vivekananda Swamy Mattam" />
+        <img src={`${process.env.PUBLIC_URL}/portfolio.jpg`} alt="Vivekananda Swamy Mattam" />
         </div>
         <div className="content">
           <div className="social_icons">
