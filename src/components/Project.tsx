@@ -81,8 +81,45 @@ function Project() {
           </p>
           <p><strong>Technologies:</strong> ESP8266, MPU6050, Haptic Feedback, Wi-Fi Communication</p>
         </div>
+        {/* 4) Foundations of Robotics – SCARA Manipulator Control & Planning */}
+        <div className="project">
+        <h2>Foundations of Robotics – SCARA Manipulator Control & Planning</h2>
+         <p>
+          This project was a three-phase exploration into robotic motion control, completed during my first semester at NYU 
+          as part of the "Foundations of Robotics" course. Using a 4-DOF SCARA manipulator, I progressively built systems for 
+          kinematic control, real-time error correction, obstacle avoidance, and dynamic trajectory execution in simulated environments. 
+          The project was developed entirely in MATLAB and Simulink, with each phase building on the last to reflect increasingly realistic robotic behaviors.
+          </p>
+          <p>
+            In the first phase, I implemented basic inverse kinematics algorithms using both the Jacobian Inverse and Jacobian Transpose methods. 
+            These were applied to track a predefined Cartesian trajectory by translating end-effector positions into joint-level motions. 
+            This initial setup helped me understand the mathematical foundations of robot control and how Euler integration (1 ms timestep) 
+            can be used to simulate smooth joint movements.
+          </p>
+          <p>
+          The second phase introduced real-time adaptability. I implemented second-order inverse kinematics to improve tracking accuracy 
+          and extended the system to avoid dynamic obstacles in the workspace. By using a Jacobian Pseudo-Inverse with Null-Space Projection, 
+          I enabled the manipulator to prioritize trajectory tracking in the x-y plane while dynamically adjusting in the z-direction to avoid collisions. 
+          This approach helped me experiment with redundancy resolution and secondary task execution, which are essential in complex robotic systems.
+          </p>
+          <p>
+          The final phase combined trajectory planning with inverse dynamic control. I designed a smooth, multi-waypoint Cartesian trajectory 
+          using trapezoidal velocity profiles and anticipation timing to ensure continuity. Then, I implemented a control system that accounted 
+          for the robot’s dynamic behavior under varying load conditions. The SCARA manipulator was simulated using a second-order inverse 
+          kinematics model that generated torque commands for precise execution. This phase gave me hands-on insight into how real robots operate 
+          under physical constraints like inertia and external forces.
+          </p>
+          <p>
+            This foundational project series shaped my core understanding of robot motion planning and control, preparing me for more advanced 
+            work in SLAM, reinforcement learning, and multi-agent coordination.
+          </p>
+          <p>
+            <strong>Tools & Frameworks:</strong> MATLAB, Simulink, SCARA Simulation, VR Visualization<br/>
+            <strong>Key Concepts:</strong> Inverse Kinematics, Null-Space Control, Trajectory Planning, Inverse Dynamics, Redundancy Resolution, Real-Time Motion Correction
+          </p>
+        </div>
 
-        {/* 4) B.A.R.K. Door – Smart Pet Access System */}
+        {/* 5) B.A.R.K. Door – Smart Pet Access System */}
         <div className="project">
           <img src={esvc} className="zoom" alt="B.A.R.K. Door" width="100%" />
           <h2>B.A.R.K. Door – Smart Pet Access System</h2>
@@ -100,7 +137,7 @@ function Project() {
           <p><strong>Technologies:</strong> BS2, RFID, Bluetooth, IoT, Servo Mechanisms</p>
         </div>
 
-        {/* 5) E.S.V.C. – Solar-Powered Electric Vehicle for Sustainable Mobility */}
+        {/* 6) E.S.V.C. – Solar-Powered Electric Vehicle for Sustainable Mobility */}
         <div className="project">
           <img src={esvc} className="zoom" alt="E.S.V.C. Project" width="100%" />
           <h2>E.S.V.C. – Solar-Powered Electric Vehicle</h2>
