@@ -109,10 +109,7 @@ function Project() {
           kinematics model that generated torque commands for precise execution. This phase gave me hands-on insight into how real robots operate 
           under physical constraints like inertia and external forces.
           </p>
-          <p>
-            This foundational project series shaped my core understanding of robot motion planning and control, preparing me for more advanced 
-            work in SLAM, reinforcement learning, and multi-agent coordination.
-          </p>
+          
           <p>
             <strong>Tools & Frameworks:</strong> MATLAB, Simulink, SCARA Simulation, VR Visualization<br/>
             <strong>Key Concepts:</strong> Inverse Kinematics, Null-Space Control, Trajectory Planning, Inverse Dynamics, Redundancy Resolution, Real-Time Motion Correction
