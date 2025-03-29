@@ -14,7 +14,7 @@ function Main() {
         <div className="content">
           <div className="social_icons">
           <a href="https://github.com/vivekmattam02" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="linkedin.com/in/vivek-mattam-a8590b23a" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+          <a href="https://linkedin.com/in/vivek-mattam-a8590b23a" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Vivekananda Swamy Mattam</h1>
           <p>Masters Student in Mechatronics and Robotics at NYU</p>
