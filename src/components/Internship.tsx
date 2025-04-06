@@ -3,6 +3,7 @@ import "../assets/styles/Internship.scss";
 
 // Placeholder images (Replace later)
 import xmachines from '../assets/images/xmachines.jpg';
+
 function Internship() {
   return (
     <div className="internship-container" id="internships">
@@ -11,7 +12,7 @@ function Internship() {
 
         {/* 1) Xmachines – Agricultural Robotics Startup */}
         <div className="internship">
-          <img src={xmachines} className="zoom" alt="Xmachines" width="100%" />
+          <img src={xmachines} className="zoom" alt="Xmachines" width="50%" />
           <h2>Xmachines – Agricultural Robotics Startup</h2>
           <p>
             At <strong>Xmachines</strong>, I contributed to the development of <strong>autonomous agricultural systems</strong>, 

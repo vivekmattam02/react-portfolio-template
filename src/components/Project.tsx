@@ -5,6 +5,7 @@ import "../assets/styles/Project.scss";
 import datacenter from '../assets/images/datacenter.jpg';
 import esvc from '../assets/images/esvc.jpg';
 import vip from '../assets/images/vip.jpg';
+import bark from '../assets/images/bark.jpg';
 
 
 function Project() {
@@ -15,7 +16,7 @@ function Project() {
 
         {/* 1) HSRN Robot – Data Center Robot */}
         <div className="project">
-          <img src={datacenter} className="zoom" alt="HSRN Robot" width="100%" />
+          <img src={datacenter} className="zoom" alt="HSRN Robot" width="50%" />
           <h2>HSRN Robot – Data Center Robot</h2>
           <p>
             The HSRN Robot Project at NYU focuses on developing a joystick-driven robotic system 
@@ -40,7 +41,7 @@ function Project() {
 
         {/* 2) NYU VIP Self-Drive – Autonomous Navigation & Visual SLAM */}
         <div className="project">
-          <img src={vip} className="zoom" alt="NYU Self-Drive" width="100%" />
+          <img src={vip} className="zoom" alt="NYU Self-Drive" width="50%" />
           <h2>NYU VIP Self-Drive – Autonomous Navigation & Visual SLAM</h2>
           <p>
             The NYU VIP Self-Drive project is a research initiative focused on developing 
@@ -64,7 +65,7 @@ function Project() {
 
         {/* 3) The S.L.A.P. Hand – Evolving My Animatronic Hand Project */}
         <div className="project">
-          <img src={vip} className="zoom" alt="S.L.A.P. Hand" width="100%" />
+          <img src={vip} className="zoom" alt="S.L.A.P. Hand" width="50%" />
           <h2>The S.L.A.P. Hand – Evolving My Animatronic Hand Project</h2>
           <p>
             The S.L.A.P. Hand (Simultaneous Linked Articulation Project) is an advanced version 
@@ -118,7 +119,7 @@ function Project() {
 
         {/* 5) B.A.R.K. Door – Smart Pet Access System */}
         <div className="project">
-          <img src={esvc} className="zoom" alt="B.A.R.K. Door" width="100%" />
+          <img src={bark} className="zoom" alt="B.A.R.K. Door" width="50%" />
           <h2>B.A.R.K. Door – Smart Pet Access System</h2>
           <p>
             B.A.R.K. (Bluetooth Actuated Remote Key) Door is a smart pet-access system I developed to 
@@ -136,7 +137,7 @@ function Project() {
 
         {/* 6) E.S.V.C. – Solar-Powered Electric Vehicle for Sustainable Mobility */}
         <div className="project">
-          <img src={esvc} className="zoom" alt="E.S.V.C. Project" width="100%" />
+          <img src={esvc} className="zoom" alt="E.S.V.C. Project" width="50%" />
           <h2>E.S.V.C. – Solar-Powered Electric Vehicle</h2>
           <p>
             The E.S.V.C. (Electric Solar Vehicle Championship) project focused on developing 
