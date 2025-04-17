@@ -6,7 +6,7 @@ import datacenter from '../assets/images/datacenter.jpg';
 import esvc from '../assets/images/esvc.jpg';
 import vip from '../assets/images/vip.jpg';
 import bark from '../assets/images/bark.jpg';
-
+import slap from '../assets/images/slap.jpg';
 
 function Project() {
   return (
@@ -65,7 +65,7 @@ function Project() {
 
         {/* 3) The S.L.A.P. Hand – Evolving My Animatronic Hand Project */}
         <div className="project">
-          <img src={vip} className="zoom" alt="S.L.A.P. Hand" width="50%" />
+          <img src={slap} className="zoom" alt="S.L.A.P. Hand" width="50%" />
           <h2>The S.L.A.P. Hand – Evolving My Animatronic Hand Project</h2>
           <p>
             The S.L.A.P. Hand (Simultaneous Linked Articulation Project) is an advanced version 
